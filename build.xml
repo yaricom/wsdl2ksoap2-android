@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="Build-wsdl2ksoap2.jar">
+	<property name="bin" value="${basedir}/bin"/>
+	<property name="src" value="${basedir}/src"/>
+	<property name="libs" value="${basedir}/libs"/>
+	<property name="classpath" value="${libs}/ksoap2-android-assembly-3.1.1-jar-with-dependencies.jar;${libs}/axis2-kernel-1.6.2.jar;${libs}/axis2-codegen-1.6.2.jar;${libs}/axis2-adb-1.6.2.jar;${libs}/axis2-adb-codegen-1.6.2.jar;${libs}/XmlSchema-1.4.7.jar;${libs}/wsdl4j-1.6.3.jar;${libs}/commons-logging-1.1.1.jar;${libs}/log4j-1.2.17.jar"/>
+	<target name="Build-wsdl2ksoap2.jar">
+		<delete includeEmptyDirs="true">
+			<fileset dir="${bin}" includes="**/*" defaultExcludes="false"/>
+		</delete>
+		<javac srcdir="${src}" destdir="${bin}" classpath="${classpath}"/>
+		<delete file="${basedir}/wsdl2ksoap2.jar"/>
+		<copy todir="${bin}">
+			<fileset file="${src}/*.properties"/>
+			<fileset file="${src}/*.xslt"/>
+		</copy>
+		<jar basedir="${bin}" destfile="${basedir}/wsdl2ksoap2.jar" compress="true" level="9"/>
+	</target>
+</project>
