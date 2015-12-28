@@ -25,6 +25,6 @@ else
 fi
 	
 
-eval "$EXECUTABLE -cp $CLASS_PATH org.ksoap2.axis2.wsdl.WSDL2KSOAP2 --noBuildXML -or -u %1 %2 %3 %4 %5 %6 %7 %8 %9"
+eval "$EXECUTABLE -cp $CLASS_PATH org.ksoap2.axis2.wsdl.WSDL2KSOAP2 --noBuildXML -or -u $1 $2 $3 $4 $5 $6 $7 $8 $9"
 
 
