@@ -1,5 +1,5 @@
 # wsdl2ksoap2-android
-Automatically exported from code.google.com/p/wsdl2ksoap2-android
+Automatically exported from https://code.google.com/p/wsdl2ksoap2-android
 
 This project is a CLI based tool to create valid ksoap2-android based classes from WSDL file that is compatible with the Android platform.
 
@@ -29,4 +29,5 @@ systems it will be done automatically upon execution of "./wsdl2ksoap.sh"
 ### Integration
 Make sure to copy generated code to your source path and to add './libs/ksoap2-android-assembly-3.1.1-jar-with-dependencies.jar' and 'wsdl2ksoap2.jar' as dependencies for your project classpath.
 
-For more info about ksoap2 usage please refer to: [http://simpligility.github.io/ksoap2-android/index.html]
+For more info about ksoap2 usage please refer to
+http://simpligility.github.io/ksoap2-android/index.html
