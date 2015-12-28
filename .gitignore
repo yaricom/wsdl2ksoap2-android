@@ -1,0 +1,6 @@
+*~
+.DS_Store
+
+# Ignore build artefacts
+bin
+wsdl2ksoap2.jar
